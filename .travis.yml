@@ -7,4 +7,4 @@
     - pip install -r requirements.txt
   
   script:
-    - pytest
+    - python nai_project.py
