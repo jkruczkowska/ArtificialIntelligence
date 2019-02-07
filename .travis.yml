@@ -1,5 +1,11 @@
   language: python
   python:
-    - "2.7"
+    - "2.7"  
+    
+  # command to install dependencies
+  before_script:
+    - easy_install distribute
+    - pip install -r requirements.txt
+  
   script:
-    - pytest
+    - python nai_project.py
