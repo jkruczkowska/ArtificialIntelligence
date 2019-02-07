@@ -29,7 +29,7 @@ piglow==1.2.4
 pyasn1==0.1.7
 pyserial==2.6
 rainbowhat==0.0.2
-requests==2.4.3
+requests>=2.20.0
 scrollphat==0.0.7
 scrollphathd==1.0.1
 sense-emu==1.0
