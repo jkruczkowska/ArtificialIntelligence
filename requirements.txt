@@ -23,7 +23,6 @@ ndg-httpsclient==0.3.2
 numpy==1.8.2
 phatbeat==0.0.2
 pianohat==0.0.5
-picamera==1.13
 picraft==1.0
 piglow==1.2.4
 pyasn1==0.1.7
