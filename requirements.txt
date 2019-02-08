@@ -1,5 +1,5 @@
 asn1crypto==0.22.0
-cryptography==1.9
+cryptography>=1.9
 enum34==1.1.6
 gyp>=0.1
 idna==2.5
@@ -7,7 +7,7 @@ ipaddress==1.0.17
 mysql-connector-python==2.1.6
 mysql-utilities==1.6.4
 numpy==1.16.1
-paramiko==2.0.0
+paramiko>=2.0.0
 pbr==5.1.2
 pexpect==4.2.1
 pyasn1==0.1.9
