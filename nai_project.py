@@ -21,7 +21,7 @@ noseCascade = cv2.CascadeClassifier(noseCascadeFilePath)
 smileCascade = cv2.CascadeClassifier(smileCascadeFilePath)
 
 imgMustache = cv2.imread('mustache.png', -1)
-imgSmiley = cv2.imread('smile_glasses.jpeg', -1)
+imgSmiley = cv2.imread('smiley.png', -1)
 
 # height, width, depth = imgSmiley.shape
 # circle_img = np.zeros((height, width), np.uint8)
@@ -136,11 +136,12 @@ while True:
 
     x_offset = 550
     y_offset = 10
-    # smile = imgSmiley
-    # res = cv2.resize(imgSmiley, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
 
     frame[y_offset:y_offset + imgSmiley.shape[0], x_offset:x_offset + imgSmiley.shape[1]] = imgSmiley
-    # smi = imgSmiley[280:340, 330:390]
+
+    # dodaj do klatki tekst mowiacy o ilosci wykrytych twarzy
+    cv2.putText(frame, "Widze wasze buzie: {}".format(str(len(faces))), (10, 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
     # Iterate over each face found
     for (x, y, w, h) in faces:
