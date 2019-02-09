@@ -10,7 +10,6 @@ pbr==5.1.2
 pexpect==4.2.1
 pyasn1==0.1.9
 pyodbc==3.0.10
-pysqlite==2.7.0
 six==1.10.0
 stevedore==1.30.0
 trash-cli==0.12.9.14
