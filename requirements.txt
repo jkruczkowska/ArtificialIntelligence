@@ -1,7 +1,6 @@
 asn1crypto==0.22.0
 cryptography>=1.9
 enum34==1.1.6
-gyp==0.1
 idna==2.5
 imutils==0.5.2
 ipaddress==1.0.17
